@@ -15,6 +15,7 @@
 
 -(void)update:(CCTime)delta
 {
+    timeSinceObstacle += delta; // delta is approximately 1/60th of a second
     // put update code here
     // Check to see if two seconds have passed
     if (timeSinceObstacle > 2.0f)
